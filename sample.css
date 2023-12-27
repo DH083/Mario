@@ -1,0 +1,163 @@
+
+
+/* post_content */
+
+.post_content {
+    width: 100%;
+    background: url(./img/main/img_common/bg-01-red.png) repeat;
+}
+.post_pic_content {
+    width: 100%;
+    height: 90vw;
+    position: relative;
+    background: url(./img/main/top/whats/bg-blocks.png) no-repeat center / contain;
+    padding: 20% 0;
+}
+.post_main_img {
+    height: 1375px;
+    position: absolute;
+    top: -1130px;
+    right: 5%;
+}
+.block {
+    width: 100%;
+    padding: 300px 0;
+}
+
+/* 포스트 상단 post_top */
+.post_top {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.screen_run {
+    width: 66%;
+    position: absolute;
+    bottom: 101%;
+    right: 5%;
+}
+.screen_fly {
+    width: 25%;
+    position: absolute;
+    top: -12%;
+    right: 7%;
+}
+.screen_jump {
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+.txt_top {
+    width: 30%;
+    position: absolute;
+    top: -25%;
+    left: 21%;
+}
+.origin_mario {
+    width: 30%;
+    transform: translate(-20%, -70%);
+}
+.mini_mario {
+    width: 20%;
+    position: absolute;
+    right: -10%;
+    top: -75%;
+}
+.screen_fight{
+    width: 65%;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+}
+.txt_mid {
+    width: 44%;
+    position: absolute;
+    top: 162%;
+    left: 0%;
+}
+.screen_swim {
+    width: 20%;
+    position: absolute;
+    top: 166%;
+    right: 14%;
+}
+.spin_mario {
+    width: 51%;
+    position: absolute;
+    right: -12%;
+    top: 65%;
+}
+.carry_mario {
+    width: 28%;
+    position: absolute;
+    top: 171%;
+    left: 42%;
+}
+.game_over {
+    width: 10%;
+    position: absolute;
+    top: 213%;
+    right: 8%;
+}
+/* 포스트 하단 post_btm */
+.post_btm {
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+.post_btm_box {
+    width: 47%;
+    height: 27vw;
+    position: relative;
+}
+/* .post_btm_screen {
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+.post_btm_pic{
+    width: 90%;
+    position: absolute;
+}
+.txt_btm {
+    width: 25%;
+    transform: translateY(-50%);
+}
+.post_btm_btn_box {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    bottom: 0;
+}
+.post_btm_btn {
+    width: 8%;
+    padding: 2px;
+    background-color: #fff;
+}
+.post_btm_btn img {
+    width: 81%;
+    position: absolute;
+    right: -71%;
+    top: -8%;
+} */
+
+.post_btm_screen {
+    width: 110%;
+    position: absolute;
+    left: 30%;
+}
+.post_btm_pic {
+    width: 110%;
+    position: absolute;
+    left: 120%;
+}
+
+.txt_btm {
+    width: 25%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,196 @@
+body {margin: 0;}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a { 
+    text-decoration: 
+    none; 
+    color: inherit;
+}
+p {
+    margin: 0;
+}
+input[type="radio"] {
+    display: none;
+}
+.arrow {
+    width: 15px;
+    height: 15px;
+}
+
+/* 닌텐도헤더 nintendo_header */
+.nintendo_header {
+    width: 100%;
+    height: 46px;
+    background-color: #fff;
+}
+.nintendo_h_logo {
+    width: 138px;
+    height: 100%;
+    background: url(./img/Nintendo.svg) no-repeat left / contain;
+}
+.nintendo_h_logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: -99999px;
+}
+
+/* 메인 main */
+
+/* 공통 bg */
+.chara_content, .line_content_top,.amiibo {
+    background: url(./img/common/bg-01-red.png) repeat;
+}
+
+/* 공통 헤더 common_header */
+.common_header {
+    width: 100%;
+    position: relative;
+    background: url(./img/common/bg-01-red.png) repeat;
+}
+.header_logo img {
+    width: 173px;
+    margin: 15px 39px;
+}
+/* 푸터 footer */
+
+footer {
+    width: 100%;
+    height: 150px;
+    padding: 0px 35px 25px;
+    box-sizing: border-box;
+    background: url(./img/main/img_common/bg-01-red.png) repeat;
+    box-shadow: 0 30px 60px 0px #000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_top {
+    width: 100%;
+    position: relative;
+}
+.footer_logo {
+    width: 152px;
+    
+}
+.move_nav_box {
+    width: 650px;
+    height: 62px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+}
+.nav_circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav_circle::before, .nav_circle::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #dddddd;
+    border-top: 2px solid #bab9b9;
+    border-left: 2px solid #bab9b9;
+    border-radius: 50%;
+}
+.nav_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_item {
+    display: flex;
+}
+.nav_item a {
+    padding: 0 20px;
+    display: flex;
+}
+.top_icon, .history_icon, .line_icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+}
+.chara_icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+.top_nav {
+    width: 36px;
+}
+.history_nav {
+    width: 59px;
+}
+.chara_nav, .line_nav {
+    width: 48px;
+}
+.top_nav2, .history_nav2, .chara_nav2, .line_nav2 {
+    display: none;
+}
+.nav_item:not(:nth-child(4)):after {
+    content: "";
+    width: 2px;
+    background-color: #dadada;
+    display: inline-block;
+}
+.nav_item:hover .top_nav1,
+.nav_item:hover .history_nav1,
+.nav_item:hover .chara_nav1,
+.nav_item:hover .line_nav1 {
+    display: none;
+}
+.nav_item:hover .top_nav2,
+.nav_item:hover .history_nav2,
+.nav_item:hover .chara_nav2,
+.nav_item:hover .line_nav2 {
+    display: block;
+}
+.footer_btm {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_btm_txt_box{
+    display: flex;
+    gap: 20px;
+}
+.footer_btm_txt_box a {
+    display: flex;
+    gap: 5px;
+}
+.footer_btm_icon{
+    height: 10px;
+}
+.footer_btm_txt {
+    height: 11px;
+}
+.nintendo_logo {
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+}
+
+.scroll_top {
+    width: 70px;
+    height: 70px;
+    background: url(./img/common/anim-block.svg) no-repeat left / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.scroll_top:hover {
+    background: url(./img/common/anim-block.svg) no-repeat right / cover;
+}

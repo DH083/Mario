@@ -1,0 +1,351 @@
+/* 메인배너 main_banner */
+.main_banner_box {
+    width: 100%;
+    height: 700px;
+    background: url(./img/main/img_common/bg-01-red.png) repeat;
+    position: relative;
+    /* border: 3px solid; */
+    overflow: hidden;
+}
+.main_banner {
+    width: 11480px;
+    height: 100%;
+    position: relative;
+}
+.mb_main_mario {
+    height: 100%;
+}
+.mb_main_mario img {
+    position: absolute;
+    left: 130px;
+    opacity: 0;
+}
+.mb_main_mario1,
+.mb_main_mario2 {
+    height: 140%;
+    top: -8%;
+    animation: scale_main 1s;
+}
+.mb_main_mario3 {
+    height: 100%;
+    animation: scale_main2 1s;
+}
+@keyframes scale_main {
+    0%{top: 100%;}
+    50%{top: 100%;}
+    80%{top: -20%;}
+    90%{top: 0;}
+    100%{top: -8%;}
+}
+@keyframes scale_main2 {
+    0%{top: 100%;}
+    50%{top: 100%;}
+    80%{top: -20%;}
+    90%{top: 10%;}
+    100%{top: 0%;}
+}
+.mb_logo {
+    height: 180px;
+    position: absolute;
+    top: 210px;
+    left: 130px;
+
+    animation: scale 2s;
+}
+@keyframes scale {
+    0%{transform: scale(0);}
+    60%{transform: scale(0);}
+    80%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+.mb_slide_first {
+    height: 100%;
+    opacity: 0;
+    animation: slide 15s infinite;
+    position: absolute;
+    top: 0;
+    left: 1080px;
+}
+.mb_slide_first2 {animation-delay: 3s;}
+.mb_slide_first3 {animation-delay: 6s;}
+.mb_slide_first4 {animation-delay: 9s;}
+.mb_slide_first5 {animation-delay: 12s;}
+@keyframes slide {
+    0% { opacity: 0;}
+    10% { opacity: 1;}
+    20% { opacity: 1;}
+    30% { opacity: 0;}
+    100% { opacity: 0;}
+}
+.mb_btm_block {
+    height: 117px;
+    position: absolute;
+    bottom: 0;
+    left: 1380px;
+}
+.mb_top_block {
+    position: absolute;
+    left: 1840px;
+    height: 118px;
+}
+.mb_mushroom {
+    height: 100px;
+    position: absolute;
+    bottom: 117px;
+    left: 2265px
+}
+/* .mb_flower {
+    height: 512px;
+    position: absolute;
+    bottom: 0;
+    left: 2530px;
+} */
+.mb_pipe {
+    height: 219px;
+    position: absolute;
+    bottom: 0;
+    left: 2526px;
+}
+.mb_coin {
+    height: 366px;
+    position: absolute;
+    top: 0;
+    left: 2716px;
+}
+.mb_txt_first {
+    height: 145px;
+    position: absolute;
+    top: 50%;
+    left: 1955px;
+    transform: translateY(-50%);
+}
+.mb_slide_sec {
+    height: 100%;
+    opacity: 0;
+    animation: slide2 12s infinite;
+    position: absolute;
+    top: 0;
+    left: 3680px;
+}
+.mb_slide_sec2 {animation-delay: 3s;}
+.mb_slide_sec3 {animation-delay: 6s;}
+.mb_slide_sec4 {animation-delay: 9s;}
+@keyframes slide2 {
+    0% { opacity: 0;}
+    10% { opacity: 1;}
+    30% { opacity: 1;}
+    40% { opacity: 0;}
+    100% { opacity: 0;}
+}
+.mb_yosh {
+    height: 310px;
+    position: absolute;
+    top: 25px;
+    left: 3630px;
+}
+.mb_peach {
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 3700px;
+}
+.mb_big_mario {
+    height: 190%;
+    position: absolute;
+    top: -1300px;
+    left: 3040px;
+}
+.ani_big {
+    animation: mb_big 0.5s forwards;
+}
+@keyframes mb_big {
+    0% {top: -1300px; left: 3040px;}
+    60% {top: -90px; left: 2790px}
+    100% { top: -160px; left: 2840px}
+}
+.mb_luigi {
+    height: 365px;
+    position: absolute;
+    top: 0px;
+    left: 4285px;
+}
+.mb_kinopio {
+    height: 160px;
+    position: absolute;
+    bottom: 100px;
+    left: 4580px;
+}
+.mb_goal {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 4540px;
+}
+.mb_goal_mario {
+    height: 100%;
+    position: absolute;
+    top: -620px;
+    left: 4540px;
+}
+.ani_goal {
+    animation: mb_goal 0.5s forwards;
+}
+@keyframes mb_goal {
+    0% {top: -1300px;}
+    60% {top: 50px;}
+    100% {top: 0;}
+}
+.mb_ghost {
+    height: 125px;
+    position: absolute;
+    top: 55%;
+    left: 5040px;
+}
+.mb_heyho {
+    height: 130px;
+    position: absolute;
+    top: 35px;
+    left: 5180px;
+}
+.mb_cupa {
+    height: 315px;
+    position: absolute;
+    bottom: 0;
+    left: 5305px;
+}
+.mb_turtle {
+    height: 130px;
+    position: absolute;
+    top: 183px;
+    left: 5435px;
+}
+.mb_gumba {
+    height: 100px;
+    position: absolute;
+    top: 210px;
+    left: 5645px;
+}
+.mb_baby_cupa {
+    height: 210px;
+    position: absolute;
+    top: 30px;
+    left: 5770px;
+}
+.mb_tnt {
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 5800px;
+}
+.mb_txt_mid {
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 5220px;
+    transform: translateY(-50%);
+}
+.mb_mid_mario {
+    height: 188%;
+    position: absolute;
+    top: 700px;
+    left: 6010px;
+}
+.ani_mid {
+    animation: mb_mid 0.5s forwards;
+}
+@keyframes mb_mid {
+    0% {top: 700px;}
+    60% {top: -203px;}
+    100% {top: -103px;}
+}
+.mb_daisy {
+    height: 350px;
+    position: absolute;
+    top: 10px;
+    left: 6755px;
+}
+.mb_slide_tir {
+    height: 100%;
+    opacity: 0;
+    animation: slide3 9s infinite;
+    position: absolute;
+    top: 0;
+    left: 6710px;
+}
+.mb_slide_tir2 {animation-delay: 3s;}
+.mb_slide_tir3 {animation-delay: 6s;}
+@keyframes slide3 {
+    0% { opacity: 0;}
+    20% { opacity: 1;}
+    40% { opacity: 1;}
+    60% { opacity: 0;}
+    100% { opacity: 0;}
+}
+.mb_wario {
+    height: 240px;
+    position: absolute;
+    bottom: 60px;
+    left: 6705px;
+}
+.mb_waluigi {
+    height: 260px;
+    position: absolute;
+    top: 15px;
+    left: 7395px;
+}
+.mb_ddkong {
+    height: 170px;
+    position: absolute;
+    bottom: 230px;
+    left: 7650px;
+}
+.mb_final_block {
+    height: 117px;
+    position: absolute;
+    bottom: 0;
+    left: 7660px;
+}
+.mb_donkeykong {
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 7410px;
+}
+.mb_final_mario {
+    height: 188%;
+    position: absolute;
+    top: 610px;
+    left: 7880px;
+}
+.ani_final {
+    animation: mb_final 0.5s forwards;
+}
+@keyframes mb_final {
+    0% {top: 610px;}
+    60% {top: -253px;}
+    100% {top: -158px;}
+}
+.mb_logo_final {
+    left: 9680px;
+}
+.mb_slide_first_final {
+    left: 10630px;
+}
+
+
+/* 위로 이동 move_top */
+
+/* footer {
+    width: 100%;
+    height: 300px;
+    background-color: aquamarine;
+} */
+/* .move_top {
+    width: 70px;
+    height: 70px;
+
+    background: url(./img/common/anim-block.svg) no-repeat left / cover;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+} */

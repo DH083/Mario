@@ -1,0 +1,518 @@
+
+.chara_header {
+    text-align: center;
+    padding: 36px 0;
+}
+.chara_header img{
+    width: 294px
+}
+.chara_header_bar{
+    width: 100%;
+    height: 6px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+/* 캐릭터 리스트 chara_list */
+.chara_list {
+    overflow: hidden;
+    padding-bottom: 133px;
+}
+.chara_list_item {
+    width: calc(100% / 2);
+    height: 23.1vw;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.chara_list_item:hover {
+    cursor: pointer;
+}
+.chara_pic {
+    transition: 0.3s;
+}
+.chara_list_item:hover .chara_pic{
+    transform: scale(1.1);
+}
+.detail_btn {
+    width: 131px;
+    height: 27px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.detail_btn_mario {
+    top: 60%;
+    right: 10%;
+}
+.detail_btn_circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.detail_btn_circle::before, .detail_btn_circle::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #dddddd;
+    border-top: 2px solid #bab9b9;
+    border-left: 2px solid #bab9b9;
+    border-radius: 50%;
+}
+.detail_btn_txt {
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 900;
+    color: #7c7c7c;
+    display: flex;
+    align-items: center;
+}
+.detail_btn_txt svg {
+    width: 20px;
+    height: 20px;
+    color: #7c7c7c;
+}
+.chara_pic, .chara_name {
+    position: absolute;
+}
+
+
+
+
+
+.chara_detail{
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+.chara_detail_pan{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.chara_detail_box {
+    width: 1120px;
+    height: 736px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.chara_detail_content {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+.chara_detail_L,
+.chara_detail_R {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.chara_detail_L img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.chara_detail_R_top {
+    padding: 0 63px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.chara_dR_name {
+    width: 218px;
+    margin: 57px 0 27px;
+}
+.chara_dR_txt {
+    line-height: 2;
+    color: #373737;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: left;
+}
+.chara_dR_voice_box {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 96px;
+}
+.chara_dR_voice_box p {
+    line-height: 30px;
+    font-weight: 900;
+    margin: 0 30px;
+}
+.chara_dR_voice_btn {
+    width: 60px;
+    height: 30px;
+    line-height: 24px;
+    font-weight: 900;
+    font-size: 14px;
+    color: #5c1801;
+    background-color: #ffd200;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 3px;
+    position: relative;
+}
+.chara_dR_voice_circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chara_dR_voice_circle::before, .chara_dR_voice_circle::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #f08100;
+    border-top: 1px solid #5c1801;
+    border-left: 1px solid #5c1801;
+    border-radius: 50%;
+}
+.chara_dR_voice_btn:hover {
+    color: #fff;
+    background-color: #ac4605;
+    cursor: pointer;
+}
+.chara_dR_voice_btn:hover .chara_dR_voice_circle::before,
+.chara_dR_voice_btn:hover .chara_dR_voice_circle::after {
+    background-color: #743208;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+
+/* 캐릭터 디테일 창 이동 버튼 chara_detail_LR_btn */
+.chara_detail_LR_btn {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffd200;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.chara_detail_left_btn {
+    left: -10%;
+}
+.chara_detail_right_btn {
+    right: -10%;
+}
+.chara_detail_LR_btn_line {
+    width: 100%;
+    height: 100%;
+    background-color: #f8ad00;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.chara_detail_LR_btn_inner {
+    width: 100%;
+    height: 100%;
+    background-color: #ffd200;
+    border-radius: 50%;
+    position: relative;
+}
+.chara_detail_LR_btn_inner svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.chara_detail_LR_btn:hover,
+.chara_detail_LR_btn:hover .chara_detail_LR_btn_inner {
+    background-color: #5c1801;
+    cursor: pointer;
+}
+.chara_detail_LR_btn:hover .chara_detail_LR_btn_line {
+    background-color: #b46431;
+}
+.chara_detail_LR_btn:hover .chara_detail_LR_btn_inner svg {
+    color: #fff;
+}
+
+
+
+/* 캐릭터 디테일 창 닫기 버튼 chara_detail_close_btn */
+.chara_detail_close_btn {
+    width: 200px;
+    height: 45px;
+    line-height: 39px;
+    font-weight: 900;
+    font-size: 16px;
+    color: #5c1801;
+    background-color: #ffd200;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 3px;
+    position: absolute;
+    z-index: 999;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.chara_detail_close_circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chara_detail_close_circle::before, .chara_detail_close_circle::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #f08100;
+    border-top: 1px solid #5c1801;
+    border-left: 1px solid #5c1801;
+    border-radius: 50%;
+}
+.chara_detail_close_btn:hover {
+    color: #fff;
+    background-color: #ac4605;
+    cursor: pointer;
+}
+.chara_detail_close_btn:hover .chara_detail_close_circle::before,
+.chara_detail_close_btn:hover .chara_detail_close_circle::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #743208;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* 캐릭터 배경 */
+/* 스크립트 div에 직접 style 적용시켜서 줄여주기 */
+.chara_list_item_mario {
+    background: url(./img/character/item/mario/bg.gif);
+}
+.chara_list_item_luigi {
+    background: url(./img/character/item/luigi/bg.gif);
+}
+.chara_list_item_peach {
+    background: url(./img/character/item/peach/bg.gif);
+}
+.chara_list_item_kinopio {
+    background: url(./img/character/item/kinopio/bg.gif);
+}
+.chara_list_item_koopa {
+    background: url(./img/character/item/koopa/bg.gif);
+}
+.chara_list_item_yoshi {
+    background: url(./img/character/item/yoshi/bg.gif);
+}
+.chara_list_item_daisy {
+    background: url(./img/character/item/daisy/bg.gif);
+}
+.chara_list_item_wario {
+    background: url(./img/character/item/wario/bg.gif);
+}
+.chara_list_item_waluigi {
+    background: url(./img/character/item/waluigi/bg.gif);
+}
+.chara_list_item_rosetta {
+    background: url(./img/character/item/rosetta/bg.gif);
+}
+.chara_list_item_koopajr {
+    background: url(./img/character/item/koopajr/bg.gif);
+}
+.chara_list_item_teresa {
+    background: url(./img/character/item/teresa/bg.gif);
+}
+.chara_list_item_donkey {
+    background: url(./img/character/item/donkey/bg.gif);
+}
+.chara_list_item_diddy {
+    background: url(./img/character/item/diddy/bg.gif);
+}
+
+
+/* 캐릭터 디테일 프로필 배경 */
+.chara_detail_L_mario {
+    background: url(./img/character/item/mario/bg.gif);
+}
+.chara_detail_L_luigi {
+    background: url(./img/character/item/luigi/bg.gif);
+}
+.chara_detail_L_peach {
+    background: url(./img/character/item/peach/bg.gif);
+}
+.chara_detail_L_kinopio {
+    background: url(./img/character/item/kinopio/bg.gif);
+}
+.chara_detail_L_koopa {
+    background: url(./img/character/item/koopa/bg.gif);
+}
+.chara_detail_L_yoshi {
+    background: url(./img/character/item/yoshi/bg.gif);
+}
+.chara_detail_L_daisy {
+    background: url(./img/character/item/daisy/bg.gif);
+}
+.chara_detail_L_wario {
+    background: url(./img/character/item/wario/bg.gif);
+}
+.chara_detail_L_waluigi {
+    background: url(./img/character/item/waluigi/bg.gif);
+}
+.chara_detail_L_rosetta {
+    background: url(./img/character/item/rosetta/bg.gif);
+}
+.chara_detail_L_koopajr {
+    background: url(./img/character/item/koopajr/bg.gif);
+}
+.chara_detail_L_teresa {
+    background: url(./img/character/item/teresa/bg.gif);
+}
+.chara_detail_L_donkey {
+    background: url(./img/character/item/donkey/bg.gif);
+}
+.chara_detail_L_diddy {
+    background: url(./img/character/item/diddy/bg.gif);
+}
+
+
+
+
+
+
+.chara_detail_box {
+    display: none;
+}
+.chara_pic {
+    width: 135%;
+}
+.chara_name {
+    width: 25%;
+    top: 33%;
+    right: 10%;
+}
+.detail_btn {
+    top: 60%;
+    right: 10%;
+}
+.chara_list_item:nth-child(2n) > .detail_btn,
+.chara_list_item:nth-child(2n) > .chara_name {
+    left: 10%;
+    right: auto;
+}
+
+.chara_pic_mario {
+    top: -63%;
+    left: -35.9%;
+}
+.chara_name_mario {
+    top: 33%;
+    right: 10%;
+}
+
+.chara_pic_luigi {
+    left: 0.5%;
+    top: -43%;
+}
+.chara_name_luigi {
+    width: 21.6%;
+    top: 33.4%;
+}
+
+.chara_pic_peach {
+    top: -19%;
+    left: -33%;
+}
+
+.chara_pic_kinopio {
+    top: -90%;
+}
+.chara_name_kinopio {
+    width: 30%;
+}
+
+.chara_pic_koopa {
+    top: -65%;
+    left: -40%;
+}
+
+.chara_pic_yoshi {
+    top: -65%;
+}
+
+.chara_pic_daisy {
+    top: -25%;
+    left: -30%;
+}
+
+.chara_pic_wario {
+    top: -60%;
+}
+
+.chara_pic_waluigi {
+    top: -30%;
+    left: -40%;
+}
+.chara_name_waluigi {
+    width: 30%;
+}
+
+.chara_pic_rosetta {
+    top: -24%;
+    right: -20%;
+}
+.chara_name_rosetta {
+    width: 35%;
+}
+
+.chara_pic_koopajr {
+    top: -90%;
+    left: -25%;
+}
+.chara_name_koopajr {
+    width: 35%;
+}
+
+.chara_pic_teresa {
+    top: -100%;
+}
+.chara_name_teresa {
+    width: 30%;
+}
+
+.chara_pic_donkey {
+    top: -80%;
+    left: -40%;
+}
+.chara_name_donkey {
+    width: 30%;
+    top: 20%;
+}
+
+.chara_pic_diddy {
+    top: -90%;
+}
+.chara_name_diddy {
+    top: 18%;
+}

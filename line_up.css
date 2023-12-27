@@ -1,0 +1,362 @@
+.line_header {
+    text-align: center;
+    padding: 16px 0;
+}
+.line_header img {
+    width: 549px;
+}
+
+/* 메인 게임 배너 main_game */
+.main_game {
+    max-width: 1480px;
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+    font-size: 0;
+}
+.main_game_img {
+    position: relative;
+    margin: 0 20px 8px;
+    box-sizing: border-box;
+}
+.main_game img {
+    max-width: 100%;
+}
+.main_game_pan {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.2);
+    display: none;
+}
+.main_game_img:hover .main_game_pan {
+    display: block;
+}
+
+/* 스위치 switch */
+
+.switch {
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #d6d6d6;
+}
+.switch_title img {
+    width: 550px;
+    margin-top: 83px;
+}
+.switch_list_box {
+    max-width: 1120px;
+    margin: 44px auto;
+    padding: 0 20px;
+}
+.switch_item_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.switch_item {
+    width: calc((100% - (25px * 3)) / 4);
+    border-bottom: 1px solid #d6d6d6;
+}
+.switch_item_img_box {
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+}
+.switch_item_img_box img {
+    width: 100%;
+    transition: 0.3s;
+}
+.switch_pan {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.switch_item_img_box:hover .switch_pan{
+    display: block;
+}
+.switch_item_txt_box {
+    text-align: left;
+    position: relative;
+}
+.switch_item_title {
+    height: 50px;
+    line-height: 1.5;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 900;
+}
+.switch_item_txt {
+    height: 107px;
+    margin-bottom: 15px;
+}
+.switch_item_ex {
+    height: 17px;
+    margin-top: 25px;
+    font-size: 11px;
+    font-weight: 700;
+}
+.switch_item_ex span {
+    border-radius: 3px;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+}
+.switch_item_date {
+    margin-top: 8px; 
+    font-size: 12px;
+    font-weight: 900;
+    color: #968c8c;
+}
+.switch_item_price {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #968c8c;
+}
+.switch_item_company {
+    color: #968c8c;
+    font-size: 10px;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.switch_go_company {
+    width:13px;
+    height: 13px;
+    line-height: 13px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: red;
+}
+.switch_item:hover .switch_item_title {
+    color: red;
+}
+.switch_item:hover .switch_item_img_box img {
+    transform: scale(1.1);
+}
+
+.switch_long_item {
+    max-width: 1120px;
+    margin: 90px auto 96px;
+    font-size: 0;
+    position: relative;
+}
+.switch_long_item img {
+    width: 100%;
+}
+.switch_long_item_pan {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: none;
+}
+.switch_long_item:hover .switch_long_item_pan{
+    display: block;
+}
+
+/* 스마트폰 서비스 sp */
+.sp_content {
+    width: 1440px;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.sp_content_title_img {
+    width: 496px;
+    margin-bottom: 63px;
+}
+.sp_content_box {
+    margin-bottom: 125px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+.sp_content_item {
+    width: 350px;
+    height: 375px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.sp_content_item_img_box img {
+    width: 100%;
+}
+.sp_content_item_title {
+    font-weight: 900;
+    font-size: 18px;
+    padding: 18px 0;
+}
+.down_box {
+    width: 100%;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.down_img_box {
+    width: 34.5%;
+    position: relative;
+    font-size: 0;
+}
+.down_img_box img {
+    width: 100%;
+}
+.down_pan {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.down_img_box:hover .down_pan {
+    display: block;
+}
+.link_site {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.link_site_txt {
+    font-size: 14px;
+    font-weight: 900;
+}
+.link_site_arrow {
+    width: 16px;
+    height: 16px;
+    line-height: 14px;
+    font-size: 15px;
+    color: #fff;
+    background-color: red;
+    border-radius: 50%;
+}
+/* 아미보 amiibo */
+.amiibo_title {
+    padding-top: 120px;
+    text-align: center;
+}
+.amiibo_title img {
+    width: 178px;
+}
+.amiibo_item_list {
+    max-width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 77px;
+}
+.amiibo_item_box {
+    width: 420px;
+    height: 595px;
+    padding: 6px;
+    margin: 66px 0 78px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: center;
+}
+.amiibo_item_circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.amiibo_item_circle::before, .amiibo_item_circle::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #dddddd;
+    border-top: 2px solid #bab9b9;
+    border-left: 2px solid #bab9b9;
+    border-radius: 50%;
+}
+.amiibo_subtitle {
+    width: 62%;
+    margin-top: 7%;
+}
+.amiibo_pic {
+    width: 100%;
+    margin-top: 5%;
+}
+.amiibo_btn_box {
+    width: 280px;
+    height: 45px;
+    line-height: 39px;
+    padding: 3px;
+    margin: 3% auto;
+    font-weight: 900;
+    font-size: 16px;
+    color: #5c1801;
+    background-color: #ffd200;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+}
+.amiibo_btn_circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.amiibo_btn_circle::before, .amiibo_btn_circle::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #f08100;
+    border-top: 1px solid #5c1801;
+    border-left: 1px solid #5c1801;
+    border-radius: 50%;
+}
+.amiibo_arrow {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+.amiibo_arrow2 {
+    display: none;
+}
+.amiibo_item_box:hover {
+    cursor: pointer;
+}
+.amiibo_btn_box:hover {
+    color: #fff;
+    background-color: #ac4605;
+}
+.amiibo_btn_box:hover .amiibo_btn_circle::before,
+.amiibo_btn_box:hover .amiibo_btn_circle::after {
+    background-color: #743208;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.amiibo_btn_box:hover .amiibo_arrow1 {
+    display: none;
+}
+.amiibo_btn_box:hover .amiibo_arrow2 {
+    display: block;
+}
